@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">MySite</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#donation">Donation</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mode-toggle" id="modeToggle">Dark Mode</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-text">
+            <h1>Welcome to MySite</h1>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <img src="./images/3-removebg-preview.png" alt="Info Image">
+        <div class="text-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam rerum minus adipisci ducimus,
+                cupiditate voluptatum delectus at, atque optio a, assumenda illum obcaecati ratione repellendus
+                perspiciatis veritatis quasi fuga ipsum dicta fugit quod cumque necessitatibus aperiam. Dolorum
+                doloremque animi labore, repellat tenetur soluta, veniam aut laudantium, odit eos maxime expedita?</p>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="text-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam rerum minus adipisci ducimus,
+                cupiditate voluptatum delectus at, atque optio a, assumenda illum obcaecati ratione repellendus
+                perspiciatis veritatis quasi fuga ipsum dicta fugit quod cumque necessitatibus aperiam. Dolorum
+                doloremque animi labore, repellat tenetur soluta, veniam aut laudantium, odit eos maxime expedita?</p>
+        </div>
+        </div>
+        <img src="./images/4-removebg-preview.png" alt="Info Image">
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="video-box">
+            <img src="video-thumbnail1.jpg" alt="Video Thumbnail 1">
+            <button class="play-btn" data-video="video1.mp4">Play</button>
+        </div>
+        <div class="video-box">
+            <img src="video-thumbnail2.jpg" alt="Video Thumbnail 2">
+            <button class="play-btn" data-video="video2.mp4">Play</button>
+        </div>
+        <div class="video-box">
+            <img src="video-thumbnail3.jpg" alt="Video Thumbnail 3">
+            <button class="play-btn" data-video="video3.mp4">Play</button>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="donation-section" id="donation">
+        <h2>Make a Donation</h2>
+        <p>Your support helps us continue our mission.</p>
+        <form id="donationForm">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <input type="number" id="amount" placeholder="Donation Amount">
+            <button type="submit">Donate Now</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>In collaboration with <img src="./images/SDGs.jpeg" alt="" class="logo-img"> <img src="./images/EGOR.jpeg"
+                alt="" class="logo-img"> <img src="./images/NYSC.jpeg" alt="" class="logo-img"></p>
+        <div class="footer-content">
+            <p>&copy; 2024 MySite. All Rights Reserved.</p>
+            <div>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

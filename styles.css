@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* General Styles */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-optical-sizing: auto;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.mode-toggle {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background: url("./images/student.jpeg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  margin: 0;
+  animation: fadeInUp 2s ease-out;
+}
+
+/* Info Section */
+.info-section {
+  display: flex;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.info-section img {
+  width: 50%;
+  height: auto;
+}
+
+.info-section .text-content {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Video Section */
+.video-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px;
+  background-color: #e2e2e2;
+}
+
+.video-box {
+  width: 30%;
+  position: relative;
+}
+
+.video-box img {
+  width: 100%;
+  height: auto;
+}
+
+.video-box .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* Donation Section */
+.donation-section {
+  padding: 50px 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donation-section form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.donation-section input,
+.donation-section button {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.logo-img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links a {
+    width: 100%;
+    text-align: left;
+  }
+
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+
+  .info-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-section img,
+  .info-section .text-content {
+    width: 100%;
+  }
+
+  .video-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-box {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .donation-section form {
+    width: 80%;
+  }
+
+  .footer .footer-content {
+    flex-direction: column;
+  }
+
+  .footer a {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .video-box {
+    width: 100%;
+  }
+
+  .video-box .play-btn {
+    padding: 10px;
+  }
+
+  .donation-section form {
+    width: 100%;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

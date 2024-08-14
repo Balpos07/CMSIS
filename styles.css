@@ -68,7 +68,7 @@ a {
 
 .navbar .menu-icon {
   display: none;
-  font-size: 28px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -309,6 +309,7 @@ body.dark-mode .footer {
 
   .navbar .menu-icon {
     display: block;
+    padding-left: 30px;
   }
 
   .info-section {
@@ -327,6 +328,10 @@ body.dark-mode .footer {
 
   .video-box {
     margin-bottom: 20px;
+  }
+  .footer .footer-content {
+    display: block;
+    justify-content: center;
   }
 }
 

@@ -12,12 +12,13 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="logo">MySite</div>
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
             <li><a href="#donation">Donation</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <button class="mode-toggle" id="modeToggle">Dark Mode</button>
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
     </nav>
 
     <!-- Hero Section -->
@@ -44,7 +45,6 @@
                 cupiditate voluptatum delectus at, atque optio a, assumenda illum obcaecati ratione repellendus
                 perspiciatis veritatis quasi fuga ipsum dicta fugit quod cumque necessitatibus aperiam. Dolorum
                 doloremque animi labore, repellat tenetur soluta, veniam aut laudantium, odit eos maxime expedita?</p>
-        </div>
         </div>
         <img src="./images/4-removebg-preview.png" alt="Info Image">
     </section>
@@ -79,8 +79,11 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>In collaboration with <img src="./images/SDGs.jpeg" alt="" class="logo-img"> <img src="./images/EGOR.jpeg"
-                alt="" class="logo-img"> <img src="./images/NYSC.jpeg" alt="" class="logo-img"></p>
+        <p>In collaboration with
+            <img src="./images/SDGs.jpeg" alt="" class="logo-img">
+            <img src="./images/EGOR.jpeg" alt="" class="logo-img">
+            <img src="./images/NYSC.jpeg" alt="" class="logo-img">
+        </p>
         <div class="footer-content">
             <p>&copy; 2024 MySite. All Rights Reserved.</p>
             <div>
@@ -91,6 +94,8 @@
         </div>
     </footer>
 
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn">↑</button>
 
     <!-- JavaScript -->
     <script src="scripts.js"></script>

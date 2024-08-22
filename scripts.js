@@ -7,11 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Dark/Light Mode Toggle
   modeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
-    if (document.body.classList.contains("dark-mode")) {
-      modeToggle.textContent = "Light";
-    } else {
-      modeToggle.textContent = "Dark";
-    }
+    modeToggle.textContent = document.body.classList.contains("dark-mode")
+      ? "Light"
+      : "Dark";
   });
 
   // Sidebar Toggle for Mobile Devices
@@ -34,5 +32,48 @@ document.addEventListener("DOMContentLoaded", function () {
   scrollToTopBtn.addEventListener("click", () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+  });
+
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+
+  // YouTube Video Modal Functionality
+  const videoThumbnails = document.querySelectorAll(".video-box img");
+  const videoModal = document.getElementById("videoModal");
+  const videoPlayer = document.getElementById("videoPlayer");
+  const closeModal = document.querySelector(".close-modal");
+
+  videoThumbnails.forEach((thumbnail) => {
+    thumbnail.addEventListener("click", () => {
+      const videoSrc = thumbnail.dataset.video;
+      videoPlayer.src = `https://www.youtube.com/embed/${`https://youtu.be/CnbjPFwkiTQ?si=r6JgQTUxEprYuMPU`}?autoplay=1`;
+      videoModal.style.display = "flex";
+    });
+  });
+
+  closeModal.addEventListener("click", () => {
+    videoModal.style.display = "none";
+    videoPlayer.src = ""; // Stop the video
+  });
+
+  // Close modal when clicking outside the modal content
+  window.addEventListener("click", (event) => {
+    if (event.target === videoModal) {
+      videoModal.style.display = "none";
+      videoPlayer.src = ""; // Stop the video
+    }
   });
 });
